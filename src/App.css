@@ -8,30 +8,9 @@ h2 {
 	font-family: 'Roboto Slab', serif;
 }
 
-a {
-	font-family: 'Roboto Condensed', sans-serif;
-	text-decoration: none;
-}
-
-a:hover {
-	color: magenta;
-	text-decoration: none;
-}
-
-ul {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	width: 20vh;
-
-	list-style: none;
-
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 18px;
-}
-
-li {
-	cursor: pointer;
+h3 {
+	font-family: 'Roboto Slab', serif;
+	font-size: small;
 }
 
 nav {
@@ -40,43 +19,57 @@ nav {
 	justify-content: space-between;
 	background-color: white;
 	width: 100%;
-	padding: 1.5rem;
+	padding: 1.25rem;
+	position: fixed;
 
 	font-family: 'Roboto Slab', serif;
-
-	position: fixed;
 }
 
 nav h2 {
 	cursor: pointer;
 }
 
-nav ul li a.active {
+ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 15rem;
+	list-style: none;
+}
+
+li {
+	padding-top: 1rem;
+	cursor: pointer;
+}
+
+li:hover {
 	color: magenta;
-	border-bottom: 4px solid magenta;
-	padding-bottom: 1.6rem;
+}
+
+a {
+	font-weight: 500;
+	text-decoration: none;
+	color: black;
+}
+
+a:hover,
+a:visited {
+	color: magenta;
+	text-decoration: none;
 }
 
 .logo {
-	width: 400px;
-	height: 400px;
+	width: 500px;
+	height: 500px;
 	border-style: solid;
 	border-color: black;
 	border-radius: 50%;
 	margin-bottom: 2rem;
 }
 
-.logo-spacing {
-	justify-content: ;
-}
-
 .home-title {
 	border-bottom: 2px solid black;
 	padding-bottom: 0.5rem;
-}
-
-.home-subtitle {
-	padding-top: 0.5rem;
 }
 
 .content {
@@ -95,21 +88,29 @@ nav ul li a.active {
 
 .about-text {
 	display: flex;
-	width: 75vh;
+	font-size: large;
+	line-height: 1.5rem;
 	margin: 2rem;
 }
 
 .work-text {
 	display: flex;
-	width: 75vh;
+	font-size: large;
+	line-height: 1.5rem;
 	margin: 2rem;
+}
+
+.work-links {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 12rem;
 }
 
 .Footer {
 	display: flex;
-	padding: 2rem;
+	padding: 2.5rem;
 	background-color: black;
 	color: white;
 	justify-content: center;
-	font-size: x-small;
 }

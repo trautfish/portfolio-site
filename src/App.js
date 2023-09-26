@@ -1,6 +1,10 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { Link, animateScroll as scroll, scrollSpy } from 'react-scroll';
+import { Link, animateScroll as scroll } from 'react-scroll';
+import logo from './images/logo-temp.jpeg';
+import { Icon } from '@iconify/react';
 import Footer from './components/Footer';
+import ContactForm from './components/ContactForm';
 
 function App() {
 	const menuItems = [
@@ -32,7 +36,7 @@ function App() {
 										to={menu.id}
 										smooth={true}
 										offset={0}
-										duration={500}
+										duration={200}
 									>
 										{menu.title}
 									</Link>
@@ -44,8 +48,12 @@ function App() {
 
 				<main>
 					<div className='content'>
-						<div className='logo-spacing'>
-							<div className='logo'></div>
+						<div>
+							<img
+								className='logo'
+								src={logo}
+								alt='Logo with illustration of a spellbook, keyboard, brush and magic wand.'
+							/>
 						</div>
 						<h1 className='home-title'>Dan Trauten</h1>
 						<h2 className='home-subtitle'>
@@ -71,8 +79,28 @@ function App() {
 							visual storytelling. I’ve also designed visual assets for
 							several iOS apps, including advertisements and games.
 						</h2>
-						<a href='http://www.github.com/trautfish'>Github</a>
-						<a href='https://www.instagram.com/dantrauten/'>Instagram</a>
+						<div className='work-links'>
+							<a href='https://www.linkedin.com/dantrauten/'>
+								<Icon
+									icon='fa6-brands:linkedin'
+									style={{ height: 53, width: 53 }}
+								></Icon>
+							</a>
+							<a href='http://www.github.com/trautfish'>
+								<span class='work-icons'>
+									<Icon
+										icon='fa6-brands:github'
+										style={{ height: 53, width: 53 }}
+									></Icon>
+								</span>
+							</a>
+							<a href='https://www.instagram.com/dantrauten/'>
+								<Icon
+									icon='fa6-brands:square-instagram'
+									style={{ height: 53, width: 53 }}
+								></Icon>
+							</a>
+						</div>
 					</div>
 					<div className='content' id='3'>
 						<h1 className='content-header'>Contact</h1>
@@ -82,6 +110,7 @@ function App() {
 					</div>
 				</main>
 			</div>
+			<ContactForm />
 			<Footer />
 		</>
 	);
