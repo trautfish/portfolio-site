@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Slab:wght@300;400;500;600&display=swap');
+
+h1 {
+	font-family: 'Roboto Slab', serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+	font-family: 'Roboto Slab', serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+	font-family: 'Roboto Condensed', sans-serif;
+	text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a:hover {
+	color: magenta;
+	text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 20vh;
+
+	list-style: none;
+
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li {
+	cursor: pointer;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: white;
+	width: 100%;
+	padding: 1.5rem;
+
+	font-family: 'Roboto Slab', serif;
+
+	position: fixed;
+}
+
+nav h2 {
+	cursor: pointer;
+}
+
+nav ul li a.active {
+	color: magenta;
+	border-bottom: 4px solid magenta;
+	padding-bottom: 1.6rem;
+}
+
+.logo {
+	width: 400px;
+	height: 400px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 50%;
+	margin-bottom: 2rem;
+}
+
+.logo-spacing {
+	justify-content: ;
+}
+
+.home-title {
+	border-bottom: 2px solid black;
+	padding-bottom: 0.5rem;
+}
+
+.home-subtitle {
+	padding-top: 0.5rem;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	background-color: lightgray;
+	align-items: center;
+	justify-content: center;
+}
+
+.content-header {
+	color: white;
+	font-family: 'Roboto Slab', serif;
+}
+
+.about-text {
+	display: flex;
+	width: 75vh;
+	margin: 2rem;
+}
+
+.work-text {
+	display: flex;
+	width: 75vh;
+	margin: 2rem;
+}
+
+.Footer {
+	display: flex;
+	padding: 2rem;
+	background-color: black;
+	color: white;
+	justify-content: center;
+	font-size: x-small;
 }
