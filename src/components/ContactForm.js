@@ -12,7 +12,7 @@ const ContactForm = () => {
 				message: '',
 			}}
 		>
-			<Form>
+			<Form className='ContactForm'>
 				<FormGroup row>
 					<Col md='8'>
 						<Field

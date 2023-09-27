@@ -3,6 +3,7 @@ import './App.css';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import logo from './images/logo-temp.jpeg';
 import { Icon } from '@iconify/react';
+import SubFooter from './components/SubFooter';
 import Footer from './components/Footer';
 import ContactForm from './components/ContactForm';
 
@@ -113,6 +114,7 @@ function App() {
 			</div>
 
 			<ContactForm />
+			<SubFooter />
 			<Footer />
 		</>
 	);

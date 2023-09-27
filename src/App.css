@@ -119,6 +119,21 @@ a:hover {
 	background-color: magenta;
 }
 
+.ContactForm {
+	display: flex;
+	flex-direction: column;
+	background-color: lightgray;
+	padding-bottom: 4rem;
+}
+
+.SubFooter {
+	display: flex;
+	padding: 6rem;
+	background-color: rgb(65, 65, 65);
+	color: white;
+	justify-content: center;
+}
+
 .Footer {
 	display: flex;
 	padding: 2.5rem;
