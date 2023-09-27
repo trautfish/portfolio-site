@@ -80,12 +80,6 @@ function App() {
 							several iOS apps, including advertisements and games.
 						</h2>
 						<div className='work-links'>
-							<a href='https://www.linkedin.com/dantrauten/'>
-								<Icon
-									icon='fa6-brands:linkedin'
-									style={{ height: 53, width: 53 }}
-								></Icon>
-							</a>
 							<a href='http://www.github.com/trautfish'>
 								<span class='work-icons'>
 									<Icon
@@ -94,6 +88,13 @@ function App() {
 									></Icon>
 								</span>
 							</a>
+							<a href='https://www.linkedin.com/dantrauten/'>
+								<Icon
+									icon='fa6-brands:linkedin'
+									style={{ height: 53, width: 53 }}
+								></Icon>
+							</a>
+
 							<a href='https://www.instagram.com/dantrauten/'>
 								<Icon
 									icon='fa6-brands:square-instagram'
@@ -103,13 +104,14 @@ function App() {
 						</div>
 					</div>
 					<div className='content' id='3'>
-						<h1 className='content-header'>Contact</h1>
+						<h1 className='content-header'>Contact Me</h1>
 						<a href='mailto: dan.trauten@gmail.com'>
 							dan.trauten@gmail.com
 						</a>
 					</div>
 				</main>
 			</div>
+
 			<ContactForm />
 			<Footer />
 		</>

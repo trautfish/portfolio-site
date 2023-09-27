@@ -6,50 +6,58 @@ const ContactForm = () => {
 	return (
 		<Formik
 			initialValues={{
-				firstName: '',
-				lastName: '',
-				phoneNum: '',
+				name: '',
+				phone: '',
 				email: '',
-				agree: false,
-				contactType: 'By Phone',
-				feedback: '',
+				message: '',
 			}}
 		>
 			<Form>
 				<FormGroup row>
-					<Label htmlFor='firstName' md='2'>
-						First Name
-					</Label>
-					<Col md='10'></Col>
-				</FormGroup>
-				<FormGroup>
-					<Label htmlFor='lastName' md='2'>
-						Last Name
-					</Label>
+					<Col md='8'>
+						<Field
+							name='name'
+							placeholder='Name'
+							className='form-control'
+						></Field>
+					</Col>
 				</FormGroup>
 				<FormGroup row>
-					<Label htmlFor='phoneNum' md='2'>
-						Phone
-					</Label>
-					<Col md='10'></Col>
+					<Col md='8'>
+						<Field
+							name='email'
+							placeholder='Email'
+							className='form-control'
+						></Field>
+					</Col>
 				</FormGroup>
 				<FormGroup row>
-					<Label htmlFor='email' md='2'>
-						Email
-					</Label>
-					<Col md='10'></Col>
+					<Col md='8'>
+						<Field
+							name='phone'
+							placeholder='Phone'
+							className='form-control'
+						></Field>
+					</Col>
 				</FormGroup>
 				<FormGroup row>
-					<Label></Label>
-					<Col md='4'></Col>
+					<Col md='8'>
+						<Field
+							name='message'
+							as='textarea'
+							rows='6'
+							placeholder='Message'
+							className='form-control'
+						></Field>
+					</Col>
 				</FormGroup>
 				<FormGroup row>
-					<Label htmlFor='feedback' md='2'>
-						Your Feedback
-					</Label>
-					<Col md='10'></Col>
+					<Col>
+						<Button className='submit-btn' type='submit'>
+							Send
+						</Button>
+					</Col>
 				</FormGroup>
-				<FormGroup row></FormGroup>
 			</Form>
 		</Formik>
 	);
