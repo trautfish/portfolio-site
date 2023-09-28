@@ -19,7 +19,7 @@ nav {
 	justify-content: space-between;
 	background-color: white;
 	width: 100%;
-	padding: 1.25rem;
+	padding: 1rem;
 	position: fixed;
 
 	font-family: 'Roboto Slab', serif;
@@ -47,7 +47,9 @@ li:hover {
 }
 
 a {
-	font-weight: 500;
+   font-family: 'Roboto Slab', serif;
+	font-weight: bold;
+   font-size: large;
 	text-decoration: none;
 	color: black;
 }
@@ -58,26 +60,83 @@ a:hover {
 }
 
 .logo {
-	width: 500px;
-	height: 500px;
+	width: 400px;
+	height: 400px;
 	border-style: solid;
-	border-color: black;
+	border: none;
 	border-radius: 50%;
-	margin-bottom: 2rem;
+	margin: 5rem 0 3rem 0;
 }
 
 .home-title {
-	border-bottom: 2px solid black;
-	padding-bottom: 0.5rem;
+	color: white;
+	font-size: 48px;
 }
 
-.content {
+.home-subtitle {
+	font-size: 28px;
+	color: white;
+	padding-top: 1.5rem;
+}
+
+.content-home {
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
-	background-color: lightgray;
+	height: 800px;
+	background-color: gray;
 	align-items: center;
 	justify-content: center;
+}
+
+.content-about {
+	display: flex;
+	flex-direction: column;
+	height: 500px;
+	background-color: white;
+	align-items: center;
+	justify-content: center;
+}
+
+.content-work {
+	display: flex;
+	flex-direction: column;
+	height: 800px;
+	background-color: gray;
+	color: white;
+	align-items: center;
+	justify-content: center;
+}
+
+.content-contact {
+	display: flex;
+	flex-direction: column;
+	height: 500px;
+	background-color: white;
+	color: black;
+	align-items: center;
+	justify-content: center;
+   line-height: 6rem;
+}
+
+
+.divider-custom-line {
+	background-color: white;
+	width: 100%;
+	max-width: 8rem;
+	height: 0.25rem;
+	background-color: white;
+	border-color: white;
+   margin-top: 1rem;
+}
+
+.divider-custom-line-dark {
+	background-color: black;
+	width: 100%;
+	max-width: 8rem;
+	height: 0.25rem;
+   margin-top: 1rem;
+	background-color: black;
+	border-color: black;
 }
 
 .content-header {
@@ -85,17 +144,12 @@ a:hover {
 	font-family: 'Roboto Slab', serif;
 }
 
+.work-text,
 .about-text {
 	display: flex;
 	font-size: large;
 	line-height: 1.5rem;
-	margin: 2rem;
-}
-
-.work-text {
-	display: flex;
-	font-size: large;
-	line-height: 1.5rem;
+	width: 75%;
 	margin: 2rem;
 }
 
@@ -110,7 +164,8 @@ a:hover {
 	background-color: black;
 	color: white;
 	border-style: none;
-	padding: 0.5rem 1rem;
+	padding: 0.5rem 2rem;
+   font-size: 18px;
 
 	font-family: 'Roboto Slab', serif;
 }
@@ -119,12 +174,12 @@ a:hover {
 	background-color: magenta;
 }
 
-.ContactForm {
+/* .ContactForm {
 	display: flex;
 	flex-direction: column;
-	background-color: lightgray;
+	background-color: white;
 	padding-bottom: 4rem;
-}
+} */
 
 .SubFooter {
 	display: flex;

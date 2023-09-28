@@ -3,9 +3,9 @@ import './App.css';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import logo from './images/logo-temp.jpeg';
 import { Icon } from '@iconify/react';
-import SubFooter from './components/SubFooter';
 import Footer from './components/Footer';
-import ContactForm from './components/ContactForm';
+// import ContactForm from './components/ContactForm';
+import { Button } from 'reactstrap';
 
 function App() {
 	const menuItems = [
@@ -36,7 +36,7 @@ function App() {
 									<Link
 										to={menu.id}
 										smooth={true}
-										offset={0}
+										offset={100}
 										duration={200}
 									>
 										{menu.title}
@@ -48,7 +48,7 @@ function App() {
 				</header>
 
 				<main>
-					<div className='content'>
+					<div className='content-home'>
 						<div>
 							<img
 								className='logo'
@@ -57,29 +57,47 @@ function App() {
 							/>
 						</div>
 						<h1 className='home-title'>Dan Trauten</h1>
+						<div class='divider-custom-line'></div>
 						<h2 className='home-subtitle'>
-							Web Developer // Illustrator
+							Frontend Developer - Illustrator
 						</h2>
 					</div>
-					<div className='content' id='1'>
-						<h1 className='content-header'>About</h1>
+					<div className='content-about' id='1'>
+						<h1>About</h1>
+						<div class='divider-custom-line-dark'></div>
 						<h2 className='about-text'>
-							I’m a Frontend Web Developer interested in creating
-							engaging, accessible web content using HTML5, CSS,
-							JavaScript, React and React Native. With my creative
-							background, I’m looking to work with folks designing web
-							apps that focus on both form and function while maintaining
-							accessibility.
+							Hi!
+							<br />
+							<br />
+							My name's Dan, and I'm a Chicago-based Frontend Web
+							Developer and Illustrator. I enjoy creating engaging web
+							content utilizing my many years of experience as a working
+							artist.
+							<br />
+							<br />
+							I’m always looking to work with other collaborators to
+							create accessible, human-centered web experiences.
 						</h2>
 					</div>
-					<div className='content' id='2'>
-						<h1 className='content-header'>Work</h1>
+					<div className='content-work' id='2'>
+						<h1>Work</h1>
+						<div class='divider-custom-line'></div>
 						<h2 className='work-text'>
 							I have many years of experience as a Freelance Illustrator
 							working in digital and traditional media, with a focus on
 							visual storytelling. I’ve also designed visual assets for
 							several iOS apps, including advertisements and games.
 						</h2>
+					</div>
+					<div className='content-contact' id='3'>
+						<h1 className='contact-title'>Contact</h1>
+						<div class='divider-custom-line-dark'></div>
+						<a href='mailto: dan.trauten@gmail.com'>
+							dan.trauten@gmail.com
+						</a>
+						<a href='https://docs.google.com/document/d/1hNxlhBsEFLyJGwmAuDAIxBsR17_V3kddGkCeMlSk8ic/edit?usp=sharing'>
+							<Button>Resume</Button>
+						</a>
 						<div className='work-links'>
 							<a href='http://www.github.com/trautfish'>
 								<span class='work-icons'>
@@ -95,7 +113,6 @@ function App() {
 									style={{ height: 53, width: 53 }}
 								></Icon>
 							</a>
-
 							<a href='https://www.instagram.com/dantrauten/'>
 								<Icon
 									icon='fa6-brands:square-instagram'
@@ -104,17 +121,9 @@ function App() {
 							</a>
 						</div>
 					</div>
-					<div className='content' id='3'>
-						<h1 className='content-header'>Contact Me</h1>
-						<a href='mailto: dan.trauten@gmail.com'>
-							dan.trauten@gmail.com
-						</a>
-					</div>
 				</main>
 			</div>
 
-			<ContactForm />
-			<SubFooter />
 			<Footer />
 		</>
 	);
