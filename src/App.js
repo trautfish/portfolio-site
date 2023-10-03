@@ -1,7 +1,8 @@
 import './App.css';
 import { Link, animateScroll as scroll } from 'react-scroll';
-import logo from './images/logo-portrait.jpg';
+
 import { Icon } from '@iconify/react';
+import logo from './images/logo-portrait.jpg';
 import Footer from './components/Footer';
 
 function App() {
@@ -34,7 +35,7 @@ function App() {
 										to={menu.id}
 										smooth={true}
 										offset={-80}
-										duration={200}
+										duration={600}
 									>
 										{menu.title}
 									</Link>
@@ -50,7 +51,7 @@ function App() {
 							<img
 								className='logo'
 								src={logo}
-								alt='Logo with illustration of a spellbook, keyboard, brush and magic wand.'
+								alt='Portrait of Dan Trauten'
 							/>
 						</div>
 						<h1 className='home-title'>Dan Trauten</h1>
@@ -81,44 +82,56 @@ function App() {
 					<div className='content-work' id='2'>
 						<h1>Work</h1>
 						<div class='divider-custom-line'></div>
-						<div className='row'>
-							<div className='projects-columns'>
-								<div class='card'>
+
+						<div className='card-container'>
+							<div className='card'>
+								<div className='card-text'>
 									<h3>SNES Randomizer</h3>
-									<p>-short explaination-</p>
-									<p>
-										Demo |{' '}
-										<a href='https://github.com/trautfish/snes-randomizer'>
-											GitHub
-										</a>
+                           <div class='divider-custom-line-card'></div>
+									<br></br>
+									<p className='card-text-body'>
+										Lightweight web app that pulls data from a
+										randomly selected Super Nintendo game using the
+										RAWG API and displays it for the user.
 									</p>
+									<br></br>
+									<p>HTML5 • CSS • JS</p>
+									<br></br>
+									<p>Demo / GitHub</p>
 								</div>
 							</div>
-							<div className='projects-columns'>
-								<div class='card'>
+							<div className='card'>
+								<div className='card-text'>
 									<h3>Boss Monster Bagels</h3>
-									<p>-short explaination-</p>
-									<p>
-										Demo |{' '}
-										<a href='https://github.com/trautfish/bossbagels-react'>
-											GitHub
-										</a>
+									<br></br>
+									<p className='card-text-body'>
+										Lightweight web app that pulls data from a
+										randomly selected Super Nintendo game using the
+										RAWG API and displays it for the user.
 									</p>
+									<br></br>
+									<p>HTML5 • CSS • JS</p>
+									<br></br>
+									<p>Demo / GitHub</p>
 								</div>
 							</div>
-							<div className='projects-columns'>
-								<div class='card'>
+							<div className='card'>
+								<div className='card-text'>
 									<h3>Nucamp Project Site</h3>
-									<p>-short explaination-</p>
-									<p>
-										Demo |{' '}
-										<a href='https://github.com/trautfish/nucampsite-react'>
-											GitHub
-										</a>
+									<br></br>
+									<p className='card-text-body'>
+										Lightweight web app that pulls data from a
+										randomly selected Super Nintendo game using the
+										RAWG API and displays it for the user.
 									</p>
+									<br></br>
+									<p>HTML5 • CSS • JS</p>
+									<br></br>
+									<p>Demo / GitHub</p>
 								</div>
 							</div>
 						</div>
+
 						<div className='illo-thumbs'></div>
 
 						<h3 className='work-text'>
@@ -140,9 +153,7 @@ function App() {
 							</h3>
 
 							<a href='https://docs.google.com/document/d/1hNxlhBsEFLyJGwmAuDAIxBsR17_V3kddGkCeMlSk8ic/edit?usp=sharing'>
-								<button>
-									<h2>Resume</h2>
-								</button>
+								<button>Resume</button>
 							</a>
 
 							<div className='work-links'>

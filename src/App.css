@@ -12,6 +12,11 @@ h4 {
 	font-weight: 500;
 }
 
+p {
+	font-family: 'Roboto Slab', serif;
+	font-size: 14px;
+}
+
 nav {
 	display: flex;
 	align-items: center;
@@ -111,58 +116,70 @@ a:hover {
 	align-items: center;
 	justify-content: center;
 }
+
 .content-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	line-height: 6rem;
+	line-height: 5rem;
 }
 
-.projects-columns {
-	float: left;
-	width: 33.3%;
-	padding: 4rem 10px 10px;
-}
-
-.row {
-	margin: 0 -5px;
-}
-
-.row:after {
-	content: '';
-	display: table;
-	clear: both;
+.card-container {
+	display: flex;
+	margin: 4rem;
+	justify-content: center;
 }
 
 .card {
-	background-color: whitesmoke;
-	color: black;
-	border: none;
-	border-radius: 5px;
-	padding: 12px;
 	text-align: center;
+	border: 3px lightgray solid;
+	border-radius: 5px;
+	padding: 1rem;
+	margin: 0 1.5rem 0 0;
+	flex-direction: stretch;
+	transition: 1s;
+}
+
+.card:hover {
+	border: 3px white solid;
+}
+
+.card-text {
+	text-align: center;
+	max-width: 10rem;
+}
+
+.card-text-body {
+	text-align: left;
 }
 
 .divider-custom-line {
 	background-color: white;
 	width: 100%;
-	max-width: 8rem;
+	max-width: 6rem;
 	height: 0.25rem;
 	background-color: white;
-	border-color: white;
-	margin-top: 0.5rem;
+	margin-top: 1rem;
 }
 
 .divider-custom-line-dark {
 	background-color: black;
 	width: 100%;
-	max-width: 8rem;
+	max-width: 6rem;
 	height: 0.25rem;
-	margin-top: 0.5rem;
+	margin-top: 1rem;
 	margin-bottom: 1rem;
 	background-color: black;
-	border-color: black;
+}
+
+.divider-custom-line-card {
+	background-color: white;
+	width: 100%;
+	max-width: 4rem;
+	height: 3px;
+	background-color: lightgray;
+	margin-top: 1rem;
 }
 
 .content-header {
@@ -194,6 +211,8 @@ button {
 	padding: 0.5rem 1rem;
 
 	font-family: 'Roboto Slab', serif;
+	font-size: 16px;
+	font-weight: 500;
 }
 
 button:hover {
