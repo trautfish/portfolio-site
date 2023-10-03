@@ -1,6 +1,5 @@
 import './App.css';
 import { Link, animateScroll as scroll } from 'react-scroll';
-
 import { Icon } from '@iconify/react';
 import logo from './images/logo-portrait.jpg';
 import Footer from './components/Footer';
@@ -87,47 +86,72 @@ function App() {
 							<div className='card'>
 								<div className='card-text'>
 									<h3>SNES Randomizer</h3>
-                           <div class='divider-custom-line-card'></div>
+									<br></br>
+									<div class='divider-custom-line-card'></div>
 									<br></br>
 									<p className='card-text-body'>
-										Lightweight web app that pulls data from a
-										randomly selected Super Nintendo game using the
-										RAWG API and displays it for the user.
+										Lightweight website that pulls data from
+										randomly selected Super Nintendo games using the
+										RAWG API - displaying that info for the viewer.
 									</p>
 									<br></br>
-									<p>HTML5 • CSS • JS</p>
+									<p>JavaScript • CSS • HTML5</p>
 									<br></br>
-									<p>Demo / GitHub</p>
+									<p>
+										Demo /{' '}
+										<a
+											className='a-card'
+											href='https://github.com/trautfish/snes-randomizer'
+										>
+											GitHub
+										</a>
+									</p>
 								</div>
 							</div>
 							<div className='card'>
 								<div className='card-text'>
 									<h3>Boss Monster Bagels</h3>
 									<br></br>
+									<div class='divider-custom-line-card'></div>
+									<br></br>
 									<p className='card-text-body'>
-										Lightweight web app that pulls data from a
-										randomly selected Super Nintendo game using the
-										RAWG API and displays it for the user.
+										Menu and online ordering website for local, freshly-baked NY-style bagels with the options for pickup and delivery.
 									</p>
 									<br></br>
-									<p>HTML5 • CSS • JS</p>
+									<p>React • Tailwind CSS</p>
 									<br></br>
-									<p>Demo / GitHub</p>
+									<p>
+										Demo /{' '}
+										<a
+											href='https://github.com/trautfish/bossbagels-react'
+											className='a-card'
+										>
+											GitHub
+										</a>
+									</p>
 								</div>
 							</div>
 							<div className='card'>
 								<div className='card-text'>
 									<h3>Nucamp Project Site</h3>
 									<br></br>
+									<div class='divider-custom-line-card'></div>
+									<br></br>
 									<p className='card-text-body'>
-										Lightweight web app that pulls data from a
-										randomly selected Super Nintendo game using the
-										RAWG API and displays it for the user.
+										Responsive, REST-ful campsite reservation web app created during the Nucamp Front-End Web Development Bootcamp in 2023.
 									</p>
 									<br></br>
-									<p>HTML5 • CSS • JS</p>
+									<p>React Native • Bootstrap</p>
 									<br></br>
-									<p>Demo / GitHub</p>
+									<p>
+										Demo /{' '}
+										<a
+											className='a-card'
+											href='https://github.com/trautfish/nucampsite-reactnative'
+										>
+											GitHub
+										</a>
+									</p>
 								</div>
 							</div>
 						</div>
@@ -145,7 +169,7 @@ function App() {
 					<div className='content-contact' id='3'>
 						<h1 className='contact-title'>Contact</h1>
 						<div class='divider-custom-line-dark'></div>
-						<div className='content-container'>
+						<div className='contact-container'>
 							<h3>
 								<a href='mailto: dan.trauten@gmail.com'>
 									dan.trauten@gmail.com
