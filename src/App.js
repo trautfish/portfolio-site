@@ -81,7 +81,6 @@ function App() {
 					<div className='content-work' id='2'>
 						<h1>Work</h1>
 						<div class='divider-custom-line'></div>
-
 						<div className='card-container'>
 							<div className='card'>
 								<div className='card-text'>
@@ -89,12 +88,15 @@ function App() {
 									<br></br>
 									<div class='divider-custom-line-card'></div>
 									<br></br>
-									<p className='card-text-body'>
-										Lightweight website that pulls data from
-										randomly selected Super Nintendo games using the
-										RAWG API - displaying that info for the viewer.
-									</p>
-									<br></br>
+									<div className='card-text-body'>
+										<p>
+											Lightweight website that pulls data from
+											randomly selected Super Nintendo games using
+											the RAWG API - displaying that info for the
+											viewer.
+										</p>
+										<br></br>
+									</div>
 									<p>JavaScript • CSS • HTML5</p>
 									<br></br>
 									<p>
@@ -114,10 +116,14 @@ function App() {
 									<br></br>
 									<div class='divider-custom-line-card'></div>
 									<br></br>
-									<p className='card-text-body'>
-										Menu and online ordering website for local, freshly-baked NY-style bagels with the options for pickup and delivery.
-									</p>
-									<br></br>
+									<div className='card-text-body'>
+										<p>
+											Menu and online ordering website for local,
+											freshly-baked NY-style bagels with the options
+											for pickup and delivery.
+										</p>
+										<br></br>
+									</div>
 									<p>React • Tailwind CSS</p>
 									<br></br>
 									<p>
@@ -137,10 +143,14 @@ function App() {
 									<br></br>
 									<div class='divider-custom-line-card'></div>
 									<br></br>
-									<p className='card-text-body'>
-										Responsive, REST-ful campsite reservation web app created during the Nucamp Front-End Web Development Bootcamp in 2023.
-									</p>
-									<br></br>
+									<div className='card-text-body'>
+										<p>
+											Responsive, REST-ful campsite reservation web
+											app created during the Nucamp Front-End Web
+											Development Bootcamp in 2023.
+										</p>
+										<br></br>
+									</div>
 									<p>React Native • Bootstrap</p>
 									<br></br>
 									<p>
@@ -156,7 +166,13 @@ function App() {
 							</div>
 						</div>
 
-						<div className='illo-thumbs'></div>
+						<div className='illo-thumbs'>
+
+
+
+
+                     
+                  </div>
 
 						<h3 className='work-text'>
 							I have many years of experience as a Freelance Illustrator

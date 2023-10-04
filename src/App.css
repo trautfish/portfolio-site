@@ -38,7 +38,7 @@ ul {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	width: 15rem;
+	width: 14rem;
 	list-style: none;
 }
 
@@ -107,7 +107,7 @@ a:hover {
 .content-work {
 	display: flex;
 	flex-direction: column;
-	height: 800px;
+	height: 1200px;
 	background-color: gray;
 	color: white;
 	align-items: center;
@@ -141,25 +141,36 @@ a:hover {
 
 .card {
 	text-align: center;
-	border: 3px lightgray solid;
+	border: 3px rgba(255, 255, 255, 0.473) solid;
 	border-radius: 5px;
-	width: 235px;
+	width: 240px;
 	padding: 1rem;
 	margin: 0 1.5rem 0 0;
-	transition: 1s;
+	transition: 0.5s ease-out;
 }
 
 .card:hover {
-	border: 3px white solid;
+	border: 3px rgb(255, 255, 255) solid;
 }
 
 .card-text {
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	gap: 0.25rem;
+	grid-template-columns: 1;
 }
 
 .card-text-body {
 	text-align: left;
+}
+
+.card-custom {
+	margin-top: 20px;
+}
+
+.illo-thumbs {
+	border: 1px solid black;
+	width: 800px;
+	height: 360px;
 }
 
 .divider-custom-line {
