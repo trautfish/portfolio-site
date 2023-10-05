@@ -57,11 +57,6 @@ const WSPGallery = ({ galleryImages }) => {
 			)}
 			<br />
 
-			{/* slide number: {slideNumber}
-			<br />
-			total slides: {galleryImages.length}
-			<br /> */}
-
 			<div className='galleryWrap'>
 				{galleryImages &&
 					galleryImages.map((slide, index) => {

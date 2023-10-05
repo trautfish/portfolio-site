@@ -3,6 +3,8 @@ import { Link, animateScroll as scroll } from 'react-scroll';
 import { Icon } from '@iconify/react';
 import logo from './images/logo-portrait.jpg';
 import galleryImage1 from './images/ronin-export-high.jpg';
+import galleryImage2 from './images/advtimefinal.jpg';
+import galleryImage3 from './images/lydia_portrait_web.jpg';
 import WSPGallery from './components/WSPGallery';
 import Footer from './components/Footer';
 
@@ -23,9 +25,9 @@ function App() {
 	];
 
 	const galleryImages = [
-		{ img: galleryImage1 },
-		{ img: galleryImage1 },
-		{ img: galleryImage1 },
+		{ img: galleryImage2 },
+      { img: galleryImage1 },
+		{ img: galleryImage3 },
 	];
 
 	return (
