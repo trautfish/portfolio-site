@@ -1,38 +1,264 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Slab:wght@300;400;500;600&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 500;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+	font-family: 'Roboto Slab', serif;
+	font-size: 14px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: white;
+	width: 100%;
+	padding: 1.5rem;
+	position: fixed;
+	z-index: 100;
+
+	font-family: 'Roboto Slab', serif;
 }
 
-.App-link {
-  color: #61dafb;
+nav h2 {
+	cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 14rem;
+	list-style: none;
+}
+
+li {
+	cursor: pointer;
+}
+
+li:hover {
+	color: magenta;
+}
+
+a {
+	font-family: 'Roboto Slab', serif;
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: magenta;
+	text-decoration: none;
+}
+
+.a-card {
+	font-family: 'Roboto Slab', serif;
+	text-decoration: none;
+	color: white;
+}
+
+.a-card-demo {
+	font-family: 'Roboto Slab', serif;
+	text-decoration: none;
+	color: lightgray;
+}
+
+.a-card-demo:hover {
+	color: lightgray;
+	cursor: auto;
+}
+
+.logo {
+	width: 325px;
+	height: 325px;
+	border-radius: 50%;
+	margin: 5rem 0 3rem 0;
+}
+
+.home-title {
+	color: white;
+	margin-bottom: 0.5rem;
+}
+
+.home-subtitle {
+	color: white;
+	margin-top: 1rem;
+}
+
+.content-home {
+	display: flex;
+	flex-direction: column;
+	height: 800px;
+	background-color: gray;
+	align-items: center;
+	justify-content: center;
+}
+
+.content-about {
+	display: flex;
+	flex-direction: column;
+	height: 500px;
+	background-color: whitesmoke;
+	align-items: center;
+	justify-content: center;
+}
+
+.content-work {
+	display: flex;
+	flex-direction: column;
+	height: 1150px;
+	background-color: gray;
+	color: white;
+	align-items: center;
+	justify-content: center;
+}
+
+.content-contact {
+	display: flex;
+	flex-direction: column;
+	height: 500px;
+	background-color: whitesmoke;
+	color: black;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	line-height: 5rem;
+	margin-top: 1rem;
+}
+
+.card-container {
+	display: flex;
+	flex-direction: row;
+	margin-left: 1.5rem;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+
+.card {
+	text-align: center;
+	border: 3px rgba(255, 255, 255, 0.473) solid;
+	border-radius: 5px;
+	width: 240px;
+	padding: 1rem;
+	margin: 0 1.5rem 0 0;
+	transition: 0.5s ease-out;
+}
+
+.card:hover {
+	border: 3px rgb(255, 255, 255) solid;
+}
+
+.card-text {
+	display: grid;
+	gap: 0.25rem;
+	grid-template-columns: 1;
+}
+
+.card-text-body {
+	text-align: left;
+}
+
+.card-custom {
+	margin-top: 20px;
+}
+
+.divider-custom-line {
+	background-color: white;
+	width: 6rem;
+	height: 0.25rem;
+	margin-top: 1rem;
+}
+
+.divider-custom-line-dark {
+	background-color: black;
+	width: 6rem;
+	height: 0.25rem;
+	margin-top: 1rem;
+}
+
+.divider-custom-line-card {
+	background-color: lightgray;
+	width: 4rem;
+	height: 3px;
+	margin: auto;
+}
+
+.content-header {
+	color: white;
+	font-family: 'Roboto Slab', serif;
+}
+
+.work-text,
+.about-text {
+	text-align: left;
+	line-height: 1.5rem;
+	max-width: 700px;
+	margin: 3rem;
+}
+
+.work-links {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 12rem;
+	margin-top: 1.5rem;
+}
+
+button {
+	background-color: black;
+	color: white;
+	border-style: none;
+	border-radius: 5%;
+	padding: 0.5rem 1rem;
+
+	font-family: 'Roboto Slab', serif;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: magenta;
+}
+
+/* .ContactForm {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	padding-bottom: 4rem;
+} */
+
+/* .SubFooter {
+	display: flex;
+	padding: 6rem;
+	background-color: rgb(65, 65, 65);
+	color: white;
+	justify-content: center;
+} */
+
+.Footer {
+	display: flex;
+	padding: 2.5rem;
+	background-color: black;
+	color: white;
+	justify-content: center;
 }
